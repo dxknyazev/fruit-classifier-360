@@ -202,15 +202,7 @@ bash scripts/export_tensorrt.sh
 
 ## Infer
 
-### Вариант 1: Локальный инференс (Python)
-
-Можно использовать скрипт `scripts/test_mlflow.py`, который загружает изображение, отправляет его на MLflow-сервер и выводит предсказание.
-
-```bash
-poetry run python scripts/test_mlflow.py --image path/to/image.jpg
-```
-
-### Вариант 2: MLflow Serving (HTTP)
+### MLflow Serving (HTTP)
 
 1. Упакуйте модель в MLflow-формат (если ещё не сделано):
 
@@ -236,6 +228,9 @@ poetry run python scripts/test_mlflow.py --image path/to/image.jpg
    ```
 
    Для удобства используйте скрипт `scripts/test_mlflow.py` (он автоматически отправит запрос на сервер).
+   ```bash
+   poetry run python scripts/test_mlflow.py --image img.jpg
+   ```
 
 ## Структура проекта
 
