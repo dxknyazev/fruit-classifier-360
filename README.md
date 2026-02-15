@@ -170,7 +170,7 @@ poetry run python commands.py
 Можно переопределить любой параметр через командную строку, например:
 
 ```bash
-poetry run python commands.py model=resnet18 train.batch_size=128
+poetry run python commands.py model.name=resnet18 train.batch_size=128
 ```
 
 ## Production preparation
