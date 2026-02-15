@@ -1,0 +1,7 @@
+img_size: 100
+val_split: 0.15
+augmentation:
+  rotation: 10
+  brightness: 0.2
+  contrast: 0.2
+  translate: 0.1
